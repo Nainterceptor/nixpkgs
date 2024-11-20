@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage rec {
   version = "1.7.1";
 
   src = fetchFromGitHub {
-    owner = "dbrgn";
+    owner = "tealdeer-rs";
     repo = "tealdeer";
     rev = "v${version}";
     hash = "sha256-UYOAj6ft6FHQz06A+K2K+bK3WXQnF5U7TuN95WIXj+M=";
@@ -44,7 +44,7 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "Very fast implementation of tldr in Rust";
-    homepage = "https://github.com/dbrgn/tealdeer";
+    homepage = "https://github.com/tealdeer-rs/tealdeer";
     maintainers = with maintainers; [ davidak newam mfrw ];
     license = with licenses; [ asl20 mit ];
     mainProgram = "tldr";
